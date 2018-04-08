@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zan99.guaizhangmen.Activity.Men.MyWalletTixianActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#c61621">
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/my_wallet"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/button2"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:paddingLeft="10dp">
+
+            <Button
+                android:id="@+id/back_left"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fanback_03"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/my_wallet_tijiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:text="@string/my_tijiao"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.15"
+            android:gravity="center_vertical|left"
+            android:id="@+id/name"
+            android:hint="请输入开户姓名"
+            app:met_clearButton= "true"
+            app:met_hideUnderline="true"
+            app:met_baseColor="#444444"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.15"
+            android:gravity="center_vertical|left"
+            android:id="@+id/card_number"
+            android:hint="请输入银行卡号"
+            app:met_clearButton= "true"
+            app:met_hideUnderline="true"
+            app:met_baseColor="#444444"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.15"
+            android:gravity="center_vertical|left"
+            android:id="@+id/kaihuhang"
+            android:textColorHint="#CECECE"
+            android:hint="开户行"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.15"
+            android:gravity="center_vertical|left"
+            android:id="@+id/zfb_number"
+            android:hint="请输入支付宝账号"
+            app:met_clearButton= "true"
+            app:met_hideUnderline="true"
+            app:met_baseColor="#444444"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.15"
+            android:gravity="center_vertical|left"
+            android:id="@+id/zfb_name"
+            android:hint="请输入姓名"
+            app:met_clearButton= "true"
+            app:met_hideUnderline="true"
+            app:met_baseColor="#444444"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.15"
+            android:gravity="center_vertical|left"
+            android:id="@+id/zfb_jine"
+            android:hint="请输入提现金额"
+            app:met_clearButton= "true"
+            app:met_hideUnderline="true"
+            app:met_baseColor="#444444"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

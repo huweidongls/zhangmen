@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efefef"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/perbg_01"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+                <TextView
+
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="设置"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:text="保存"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_alignBottom="@+id/editText"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true" />
+
+                <LinearLayout
+                    android:id="@+id/button2"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    >
+                <Button
+                    android:id="@+id/button_left"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/fanback_03"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.84"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="96dp"
+                    android:layout_height="92dp"
+                    android:layout_weight="0.12"
+                    android:background="@drawable/radius"
+                    android:weightSum="1">
+                    <EditText
+                        android:id="@+id/touxiangsrc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:id="@+id/imagetouxiang"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/iconheader_03" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@null"
+                    android:id="@+id/sctouxiang"
+                    android:text="上传头像"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/boder"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.18"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center_vertical|left"
+                    app:met_baseColor="#444444"
+                    android:id="@+id/nick_name"
+                    app:met_floatingLabelText="aaaaaa"
+                    app:met_hideUnderline="true"
+                    app:met_clearButton= "true"
+                    android:background="@null"
+                    android:textSize="16dp" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+
+                <TextView
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.15"
+                    android:gravity="center_vertical|left"
+                    android:id="@+id/pasmobile"
+                    android:textSize="16dp" />
+                <TextView
+                    android:visibility="gone"
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.15"
+                    android:gravity="center_vertical|left"
+                    android:id="@+id/mobile"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="0.01"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/rightjian_03" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.15"
+                    android:gravity="center_vertical|left"
+                    android:id="@+id/uname"
+                    android:hint="请输入邀请码"
+                    app:met_clearButton= "true"
+                    app:met_hideUnderline="true"
+                    app:met_baseColor="#444444"
+                    android:textSize="16dp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

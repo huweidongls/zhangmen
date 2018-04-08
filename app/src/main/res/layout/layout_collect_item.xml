@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:padding="5dp">
+
+         <ImageView
+             android:layout_width="55dp"
+             android:layout_height="wrap_content"
+             android:adjustViewBounds="true"
+             android:id="@+id/booksimg"
+             />
+         <LinearLayout
+             android:layout_weight="1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="8dp"
+             android:orientation="vertical">
+
+             <TextView
+                 android:id="@+id/booksname"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:paddingTop="5dp"
+                 android:paddingBottom="5dp"
+                 android:textSize="16dp"
+                 android:textColor="#c71521"
+                 />
+             <TextView
+                 android:id="@+id/create_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:paddingBottom="5dp"
+                 android:textSize="12dp"
+                 />
+             <TextView
+                 android:id="@+id/bookssynopsis"
+                 android:textSize="12dp"
+                 android:paddingBottom="5dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:maxEms="18"
+                 android:singleLine="true"
+                 android:ellipsize="end"
+                 />
+         </LinearLayout>
+
+         <ImageView
+             android:id="@+id/imageView4"
+             android:layout_width="wrap_content"
+             android:layout_height="16dp"
+             android:layout_marginTop="20dp"
+             android:layout_marginRight="10dp"
+             android:scaleType="fitEnd"
+             android:src="@drawable/rightjian_03" />
+
+     </LinearLayout>
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="#999"
+         ></View>
+
+</LinearLayout>

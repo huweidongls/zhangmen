@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#C71521</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFF</color>
+    <color name="publicBackground">#C71521</color>
+    <color name="background">#EFEFEF</color>
+
+    <color name="menu_text_color">#999999</color>
+    <color name="menu_focus_text_color">#c61621</color>
+    <color name="dialog_bg">#bc000000</color>
+    <color name="read_only_color">#999999</color>
+
+    <color name="music_text_color">#c61621</color>
+</resources>

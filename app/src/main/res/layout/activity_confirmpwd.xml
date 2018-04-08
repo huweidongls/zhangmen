@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#c61621"
+        android:layout_alignParentTop="true">
+
+        <TextView
+
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+        <LinearLayout
+            android:id="@+id/button2"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginStart="15dp"
+            >
+        <Button
+
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/fanback_03"
+            android:id="@+id/back_left"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="0.02">
+
+        <EditText
+            android:id="@+id/newpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.18"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_vertical|left"
+            android:inputType="numberPassword"
+            android:hint="新密码"
+            android:background="@drawable/radius_border_gray"
+            android:textColor="#c7c7cd"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="0.02">
+
+        <EditText
+            android:id="@+id/redenewpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.18"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:inputType="numberPassword"
+            android:gravity="center_vertical|left"
+            android:hint="确认新密码"
+            android:background="@drawable/radius_border_gray"
+            android:textColor="#c7c7cd"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="0.53">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/radius_red"
+            android:text="验证"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

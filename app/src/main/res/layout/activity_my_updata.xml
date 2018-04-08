@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context="com.zan99.guaizhangmen.Activity.Men.MyUpdataActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c61621"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/my_updata"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/button2"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                >
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/fanback_03"
+                    android:id="@+id/back_left"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+
+            <ImageView
+                android:id="@+id/myupdata_book"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/myupdata_book"
+                android:layout_width="124dp"
+                android:layout_height="160dp" />
+
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/myupdata_book"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp">
+
+                <TextView
+                    android:textColor="#585858"
+                    android:id="@+id/myupdata_book_name"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="如何说客户才会听"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#8F8F8F"
+                    android:id="@+id/myupdata_book_yanjiang"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/myupdata_book_name"
+                    android:text="演讲：小宇哥"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#8F8F8F"
+                    android:id="@+id/myupdata_book_date"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/myupdata_book_yanjiang"
+                    android:text="2018-01-12"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/myupdata_book_play"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/myupdata_book_date"
+                    android:src="@drawable/myupdata_play"
+                    android:layout_width="170dp"
+                    android:layout_height="42dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="#ffffff"
+                android:padding="15dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="下载列表"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ListView
+                android:paddingLeft="12dp"
+                android:id="@+id/myupdata_book_zhangjie"
+                android:background="#ffffff"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zan99.guaizhangmen.Activity.Men.MyUpdataBooksActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c61621"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/my_updata"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/button2"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                >
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/fanback_03"
+                    android:id="@+id/back_left"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.zan99.guaizhangmen.Widget.ListViewLinearlayout
+            android:id="@+id/myupdata_book_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:divider="@null"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            android:scrollbars="none">
+
+        </com.zan99.guaizhangmen.Widget.ListViewLinearlayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

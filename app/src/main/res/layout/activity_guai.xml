@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".Activity.Guai.GuaiActivity"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#c61621"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/guai"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/search_btn"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:focusableInTouchMode="true"
+            android:paddingRight="12dp"
+            android:layout_alignParentEnd="true">
+
+            <ImageButton
+                android:id="@+id/search_btn_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_alignParentRight="true"
+                android:padding="30dp"
+                android:background="@drawable/searchbtn_03"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <com.donkingliang.banner.CustomBanner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:indicatorStyle="ORDINARY"
+                    app:indicatorGravity="CENTER"
+                    app:indicatorSelectRes="@drawable/shape_point_select"
+                    app:indicatorUnSelectRes="@drawable/shape_point_unselect"
+                    app:indicatorInterval="5dp"/>
+
+                <!--<HorizontalScrollView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:background="#FFFFFF"-->
+                    <!--android:paddingRight="10dp"-->
+                    <!--android:scrollbars="none">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/gallery"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:orientation="horizontal"></LinearLayout>-->
+                <!--</HorizontalScrollView>-->
+
+                <!--<com.zan99.guaizhangmen.Widget.CustomerGridView-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:numColumns="4"-->
+                    <!--android:background="#FFFFFF"-->
+                    <!--android:id="@+id/guai_fenlei"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"></com.zan99.guaizhangmen.Widget.CustomerGridView>-->
+
+                <RelativeLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#FFFFFF"
+                    >
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/guai_viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="185dp"
+                        />
+                    <LinearLayout
+                        android:id="@+id/points"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#fff"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/new_books"
+                    android:textColor="#474646"
+                    android:textSize="18dp" />
+
+                <com.zan99.guaizhangmen.Widget.ListViewLinearlayout
+                    android:id="@+id/glist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:divider="@null"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:focusableInTouchMode="true"
+                    android:scrollbars="none">
+
+                </com.zan99.guaizhangmen.Widget.ListViewLinearlayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

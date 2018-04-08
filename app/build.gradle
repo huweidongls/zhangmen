@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+
+android {
+    signingConfigs {
+        debug {
+            keyAlias 'g'
+            keyPassword '123456a'
+            storePassword '123456a'
+            storeFile file('E:/guaizhangmen/gzm.jks')
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.zan99.guaizhangmen"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 2
+        versionName "2.0.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        sourceSets.main {
+            jniLibs.srcDir 'libs'
+        }
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/2'] } }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //26
+
+    //26
+
+    //WANGMUTIAN 七牛上传
+
+    //微信支付
+
+    //支付宝支付
+    compile files('libs/alipaySdk-20170922.jar')
+    //shareSDK分享
+    compile files('libs/ShareSDK/MobCommons-2017.1024.1907.jar')
+    compile files('libs/ShareSDK/MobTools-2017.1024.1907.jar')
+    compile files('libs/ShareSDK/ShareSDK-Core-3.1.1.jar')
+    compile files('libs/ShareSDK/ShareSDK-QQ-3.1.1.jar')
+    compile files('libs/ShareSDK/ShareSDK-SinaWeibo-3.1.1.jar')
+    compile files('libs/ShareSDK/ShareSDK-Wechat-3.1.1.jar')
+    compile files('libs/ShareSDK/ShareSDK-Wechat-Core-3.1.1.jar')
+    compile files('libs/ShareSDK/ShareSDK-Wechat-Moments-3.1.1.jar')
+    compile files('libs/NELivePlayer-1.3.1.jar')
+    compile files('libs/jcore-android-1.1.9.jar')
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    testCompile 'junit:junit:4.12'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.youth.banner:banner:1.4.10'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.alibaba:fastjson:1.1.63.android'
+    compile 'com.android.support:design:26.+'
+    compile 'io.github.rockerhieu:emojicon:1.4.1'
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+    compile 'com.github.donkingliang:CustomBanner:1.1.0'
+    compile 'org.litepal.android:core:1.3.2'
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.okio:okio:1.5.0'
+    compile 'com.squareup.okhttp3:okhttp:3.0.0-RC1'
+    compile 'com.qiniu:qiniu-android-sdk:7.3.+'
+    compile 'com.qiniu:happy-dns:0.2.13'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'com.ldoublem.loadingview:loadingviewlib:1.0'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile 'me.imid.swipebacklayout.lib:library:1.1.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.android.support:multidex:1.0.1'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+}

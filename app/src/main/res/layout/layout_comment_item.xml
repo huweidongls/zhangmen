@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <ImageView
+            android:id="@+id/head_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/iconheader_03" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="3dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/nick_name_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#4b4b4b"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/timer_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#b2b2b2"
+                        android:textSize="12dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/dater_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#4b4b4b"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <io.github.rockerhieu.emojicon.EmojiconTextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#555555"
+                android:padding="5dp"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efefef"
+        android:orientation="horizontal"
+        android:id="@+id/particulars"
+        android:padding="10dp">
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/books_img"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/books_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#272727"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/books_synopsis"
+                android:textColor="#272727"
+              />
+            <TextView
+                android:id="@+id/auther_name"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#6d7077"
+               />
+            <TextView
+                android:id="@+id/create_time"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#6d7077"
+               />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efefef"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/revert"
+        android:padding="7dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:id="@+id/topheadimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/iconheader_03" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:paddingTop="3dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/top_nick_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#4b4b4b"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/top_timer"
+                            android:text="11:27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#b2b2b2"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/top_dater"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#4b4b4b"
+                            android:text="2017-09-18"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <io.github.rockerhieu.emojicon.EmojiconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555555"
+                    android:padding="5dp"
+                    android:textSize="16dp"
+                    android:id="@+id/top_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8e7e7"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/top_book_img"
+                android:adjustViewBounds="true"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shu_03"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/top_book_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="#272727"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/top_book_synopsis"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#272727"
+                    />
+                <TextView
+                    android:id="@+id/top_book_author"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6d7077"
+                    android:text="卡娃儿 著"/>
+                <TextView
+                    android:id="@+id/top_book_time"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6d7077"
+                    android:text="2017-06-08"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="tag_comment"></item>
+    <item type="id" name="to_name"></item>
+    <item type="id" name="banner_type"></item>
+    <item type="id" name="banner_infoid"></item>
+    <item type="id" name="category_id"></item>
+    <item type="id" name="books_id"></item>
+    <item type="id" name="discuss_id"></item>
+    <item type="id" name="position"></item>
+    <item type="id" name="is_zan"></item>
+    <item type="id" name="is_save"></item>
+    <item type="id" name="author_id"></item>
+    <item type="id" name="fangtan_id"></item>
+    <item type="id" name="load_url"></item>
+    <item type="id" name="url_title"></item>
+    <item type="id" name="comment_id"></item>
+    <item type="id" name="to_user_id"></item>
+    <item type="id" name="video_player_fragment"></item>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingBottom="18dp"
+    android:paddingTop="18dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:id="@+id/myupdata_mediaplayer_menu_play"
+        android:src="@drawable/myupdata_mediaplayer_menu_play"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/myupdata_mediaplayer_menu_name"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:text="123123123123"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+</LinearLayout>

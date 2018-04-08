@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#c61621"
+        android:layout_alignParentTop="true">
+
+        <TextView
+
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="推荐赢积分"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/share1"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="36dp"
+            android:layout_height="30dp">
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:id="@+id/share"
+                android:background="@drawable/share_03" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/button2"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            >
+        <Button
+
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/fanback_03"
+            android:id="@+id/back_left"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="长按图片保存到相册"/>
+
+    <LinearLayout
+        android:id="@+id/guaidou"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</LinearLayout>

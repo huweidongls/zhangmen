@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#c61621"
+        android:layout_alignParentTop="true">
+
+        <TextView
+
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+        <LinearLayout
+            android:id="@+id/button2"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            >
+        <Button
+
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/fanback_03"
+            android:id="@+id/back_left"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓&#8195;&#8195;名"
+            android:textSize="18sp"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.18"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_vertical|left"
+            app:met_baseColor="#bebdbd"
+            app:met_floatingLabelText="aaaaaa"
+            app:met_hideUnderline="true"
+            android:hint="请输入您的姓名"
+            android:background="@null"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手&#8194;机&#8194;号"
+            android:textSize="18sp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.18"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="请输入您的手机号"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="16sp"
+            app:met_baseColor="#bebdbd"
+            app:met_floatingLabelText="aaaaaa"
+            android:inputType="number"
+            app:met_hideUnderline="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/getcode"
+            android:background="@drawable/radius_border_red"
+            android:textColor="#e33109"
+            android:text="获取验证码"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验&#8194;证&#8194;码"
+            android:textSize="18sp"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.18"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_vertical|left"
+            app:met_baseColor="#bebdbd"
+            app:met_floatingLabelText="aaaaaa"
+            app:met_hideUnderline="true"
+            android:hint="请输入您的手机验证码"
+            android:background="@null"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密&#8195;&#8195;码"
+            android:textSize="18sp"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.18"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical|left"
+            app:met_baseColor="#bebdbd"
+            app:met_floatingLabelText="aaaaaa"
+            app:met_hideUnderline="true"
+            android:hint="由6-16位大小写字母及数字组成"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码"
+            android:textSize="18sp"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/rpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.18"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_vertical|left"
+            app:met_baseColor="#bebdbd"
+            app:met_floatingLabelText="aaaaaa"
+            app:met_hideUnderline="true"
+            android:hint="再次输入密码"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="企业名称"
+            android:textSize="18sp"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="wrap_content"
+            android:id="@+id/uname"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.18"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_vertical|left"
+            app:met_baseColor="#bebdbd"
+            app:met_floatingLabelText="aaaaaa"
+            app:met_hideUnderline="true"
+            android:hint="请输入您的企业名称"
+            android:background="@null"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="0.53">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/radius_red"
+            android:text="立即注册"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册完毕，请使用手机号登录进入系统"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#bebdbd"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

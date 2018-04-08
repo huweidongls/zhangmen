@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efefef"
+    android:id="@+id/ll"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/perbg_01"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true">
+
+                        <TextView
+
+                            android:id="@+id/editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:text="充值积分"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/tradelog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/editText"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@null"
+                            android:text="交易记录"
+                            android:textColor="#fff"
+                            android:textSize="16dp" />
+                        <LinearLayout
+                            android:id="@+id/button2"
+                            android:layout_width="60dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_gravity="center"
+                            android:paddingLeft="10dp"
+                            >
+                            <Button
+                                android:id="@+id/back_left"
+                                android:layout_width="10dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/fanback_03"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <TextView
+                            android:id="@+id/balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textSize="40sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:text="余额"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+                            <ImageView
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/jy_03"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#fff"
+                    android:padding="5dp"
+                    android:text="充值"/>
+                <com.zan99.guaizhangmen.Widget.CustomerGridView
+                    android:id="@+id/rechargegd"
+                    android:background="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </com.zan99.guaizhangmen.Widget.CustomerGridView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#b0b0b0"
+                    android:padding="5dp"
+                    android:text="如果充值遇到问题，请联系客服400-5555-888进行反馈，工作人员会及时帮您解决。"/>
+
+            </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+</LinearLayout>
