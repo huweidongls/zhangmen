@@ -10,7 +10,7 @@ import android.support.multidex.MultiDex;
 
 public class APP extends Application {
 
-    //app2018
+    //app2018.04.08
     private static APP instance;
 
     public synchronized static APP getInstance() {
